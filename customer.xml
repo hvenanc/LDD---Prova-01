@@ -1,4 +1,5 @@
-<customers>
+<customers xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="letraA.xsd">
     <customer id="524" store_id="1" first_name="Jared" last_name="Ely"
         email="jared.ely@sakilacustomer.org" address_id="530" active="t" />
     <customer id="1" store_id="1" first_name="Mary" last_name="Smith"
