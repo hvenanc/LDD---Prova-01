@@ -1,3 +1,5 @@
+let $stores := distinct-values(//customer/@store_id)
+return
 <table border="2">
       <thead>
         <tr>
@@ -7,12 +9,11 @@
       </thead>
       <tbody>
         {
-          let $stores := distinct-values(/customers/customer/@store_id)
           for $store-id in $stores
           return
           <tr>
             <td>{ $store-id }</td>
-            <td>{ count(/customers/customer[@store_id = $store-id]) }</td>
+            <td>{ count(//customer[@store_id = $store-id]) }</td>
           </tr>
         }
       </tbody>  
