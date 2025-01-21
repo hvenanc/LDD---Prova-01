@@ -21,8 +21,7 @@
                         <xs:attribute name="active" use="required">
                             <xs:simpleType>
                                 <xs:restriction base="xs:string">
-                                    <xs:enumeration value="t" />
-                                    <xs:enumeration value="f" />
+                                    <xs:pattern value="[a-z]"/>
                                 </xs:restriction>
                             </xs:simpleType>
                         </xs:attribute>
